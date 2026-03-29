@@ -1,0 +1,175 @@
+Fri Mar 27 06:00:40 PM UTC 2026: 
+ list.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/60
+4df3710
+Fri Mar 27 06:04:28 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/60
+4388cc9
+Fri Mar 27 06:11:31 PM UTC 2026: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:98:22: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   98 |         nodo->next = current->next;
+      |                      ^~~~~~~
+      |                      popCurrent
+list.c:98:22: note: each undeclared identifier is reported only once for each function it appears in
+1ab4aa2
+Fri Mar 27 06:12:25 PM UTC 2026: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  1|5
+total_score: 10/60
+133c4d0
+Sat Mar 28 02:13:55 AM UTC 2026: 
+ tests:  1|5
+total_score: 10/60
+312c4af
+Sun Mar 29 09:25:22 PM UTC 2026: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:38:29: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   38 |     List*¨L = malloc(sizeof(list));
+      |                             ^~~~
+      |                             List
+list.c:38:29: note: each undeclared identifier is reported only once for each function it appears in
+list.c:39:5: error: ‘L’ undeclared (first use in this function)
+   39 |     L->head = NULL;
+      |     ^
+list.c:38:10: error: unused variable ‘¨L’ [-Werror=unused-variable]
+   38 |     List*¨L = malloc(sizeof(list));
+      |          ^~
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+105b580
+Sun Mar 29 09:25:39 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:39:5: error: ‘L’ undeclared (first use in this function)
+   39 |     L->head = NULL;
+      |     ^
+list.c:39:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c:38:10: error: unused variable ‘¨L’ [-Werror=unused-variable]
+   38 |     List*¨L = malloc(sizeof(List));
+      |          ^~
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+ca8f8e6
+Sun Mar 29 09:26:01 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 20/60
+ef4fcb9
+Sun Mar 29 09:44:19 PM UTC 2026: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:60:35: error: expected ‘;’ before ‘}’ token
+   60 |         return list->current->data
+      |                                   ^
+      |                                   ;
+   61 |     }
+      |     ~                              
+f476d1b
+Sun Mar 29 09:45:24 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+20a2875
+Sun Mar 29 09:48:31 PM UTC 2026: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  6|3
+total_score: 30/60
+3ee557d
+Sun Mar 29 11:30:25 PM UTC 2026: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  0|0
+5f89e31
+Sun Mar 29 11:31:52 PM UTC 2026: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  10|2
+total_score: 40/60
+ea689c7
+Sun Mar 29 11:34:26 PM UTC 2026: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  10|2
+total_score: 40/60
+34c32f3
+Sun Mar 29 11:35:36 PM UTC 2026: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:98:22: error: ‘nuevo’ undeclared (first use in this function)
+   98 |         list->tail = nuevo;
+      |                      ^~~~~
+list.c:98:22: note: each undeclared identifier is reported only once for each function it appears in
+6b1e521
+Sun Mar 29 11:35:58 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 50/60
+78c17a4
+Sun Mar 29 11:44:18 PM UTC 2026: 
+ list.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:165:15: error: expected ‘;’ before ‘return’
+  165 |     free(nodo)
+      |               ^
+      |               ;
+  166 |     return NULL;
+      |     ~~~~~~     
+list.c:151:12: error: unused variable ‘dato’ [-Werror=unused-variable]
+  151 |     void * dato = nodo->data;
+      |            ^~~~
+list.c:167:1: error: control reaches end of non-void function [-Werror=return-type]
+  167 | }
+      | ^
+cc1: all warnings being treated as errors
+8e1b788
+Sun Mar 29 11:44:32 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:151:12: error: unused variable ‘dato’ [-Werror=unused-variable]
+  151 |     void * dato = nodo->data;
+      |            ^~~~
+cc1: all warnings being treated as errors
+3adc049
+Sun Mar 29 11:44:51 PM UTC 2026: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  12|0
+total_score: 60/60
+e07f02c
